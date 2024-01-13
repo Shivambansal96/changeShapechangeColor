@@ -10,7 +10,7 @@
     align-items: flex-end;
     height: 60vh;
     width: 100vw;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 #outerCircle {
@@ -24,12 +24,12 @@
 }
 
 #innerShape {
-    height: 100px;
-    width: 100px;
+    height: 180px;
+    width: 180px;
     background-color: red;
     /* border: solid 2px black; */
     animation-name: myAnime;
-    animation-duration: 1s;
+    animation-duration: 3s;
     animation-iteration-count: infinite;
     /* animation: myAnime 3s infinite; */
 }
@@ -42,13 +42,13 @@
 
 @keyframes myAnime {
   0% {
-    transform: rotate(360deg);
-    opacity: 0.5;
+    transform: rotate(0deg);
+    opacity: 0.8;
   }
 
   100% {
-    transform: scale(1.5);
-
+    /* transform: scale(3); */
+    transform: rotate(360deg);
     opacity: 1;
   }
 } 
@@ -59,7 +59,14 @@
 
   .hexagon {
     clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+  }
 
+  .square {
+    clip-path: polygon(0 0, 100% 1%, 100% 50%, 100% 100%, 0 100%, 0% 50%);
+  }
+
+  .rectangle {
+    clip-path: polygon(0 0, 100% 1%, 100% 100%, 0% 100%);
   }
 
   .star {

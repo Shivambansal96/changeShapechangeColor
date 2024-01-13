@@ -35,7 +35,7 @@ function generateRandomColor(){
 
 btnTwo.addEventListener("click", changeShape);
  
-let shapes = ["hexagon", "circle", "star", "triangle", "cross", "close"];
+let shapes = ["hexagon", "circle", "square", "rectangle", "star", "triangle", "cross", "close"];
 
 // let shapes = ["diamond", "circle", "rectangle", "star-five", "cut-diamond", "hexagon", "heart", "infinity"];
     
